@@ -1,0 +1,17 @@
+<h1>This is the employees show page</h1>
+
+<ul>
+
+    Government Name: <%= @employee.to_full_name%><br/>
+    <% if @employee.img_url%>
+        <%= image_tag @employee.img_url %><br/><br/>
+    <%else %>
+    <%end%>
+    <li>Nickname: <%= @employee.alias%></li>
+    <li>Title: <%= @employee.title%></li>
+    <li>Office: <%= @employee.office%></li>
+    <li>Doggo: <%=@employee.dog.name %> </li>
+
+
+
+</ul>

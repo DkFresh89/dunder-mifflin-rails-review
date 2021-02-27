@@ -1,0 +1,12 @@
+<h1>This is the dogs page:</h1>
+
+<%= button_to "Sort these dogs", dogs_path(), :method => :get%>
+
+<ul><% @dogs.each do |d| %>
+
+<li><%= link_to d.name, dog_path(d) %> </li><br>
+
+<% end %>
+</ul>
+
+<%#= button_to "Go Back", %>
